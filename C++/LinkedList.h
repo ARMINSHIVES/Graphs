@@ -4,6 +4,10 @@
 template <typename T>
 class LinkedList {
     public:
+        LinkedList() {
+            head = nullptr;
+            size = 0;
+        }
         LinkedList(T v) {
             head = new Node<T>(v);
             size = 1;
